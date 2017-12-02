@@ -1,1 +1,0 @@
-varshaclinic.in
