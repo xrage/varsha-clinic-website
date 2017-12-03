@@ -25,9 +25,19 @@
 
 <link rel="stylesheet" type="text/css" href="./css/master.css" />
 
+<style type="text/css">
+.panel-group .panel-heading h4 a.collapsed:after {
+    display: none;
+    
+}
+.panel-group .panel-heading h4 a:after {
+   display: none;
+}
+</style>t
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" id="home">
 
 <div class="preloader" id="preloader">
     <img src="./images/preloader.gif" alt="" />
@@ -79,8 +89,10 @@
             <!-- HEADER LOGO -->
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="header-logo">
-                    <a href="#"><img src="./images/logo.svg" alt="" />
-                        <span class="bold600 color-child-6">VARSHA</span><span class="color-child-5"> DENTAL CLINIC</span>
+                    <a href="#home"><img src="./images/logo.svg" alt="" />
+                        <span class="bold600 color-child-6">VARSHA</span>
+                        <span class="color-child-5 hidden-xs"> DENTAL</span>
+                        <span class="color-child-5"> CLINIC</span>
                     </a>
                 </div>
 			</div>
@@ -113,24 +125,22 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="mobile-bar-cont">
                     <div class="top-menu-logo">
-                        <a href="#"><img src="./images/logo.svg" alt="" />
-                            <span class="bold600 color-child-6">VERSHA</span><span class="color-child-5">DENTAL CLINIC</span>
+                        <a href="#home"><img src="./images/logo.svg" alt="" />
+                            <span class="bold600 color-child-6">VERSHA</span>
+                            <span class="color-child-5 hidden-xs"> DENTAL</span>
+                            <span class="color-child-5"> CLINIC</span>
                         </a>
                     </div>
                     <div class="mobile-bar">
                         <div class="show-menu" id="show-menu">
                             <i class="fa fa-bars"></i>
                         </div>
-                        <div class="color-sw-open-1" id="color-sw-open-1">
-                            <i class="fa fa-gear"></i>
-                        </div>
                     </div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="">HOME</a></li>
+                    <li class="active"><a href="#home">HOME</a></li>
                     <li><a href="#about-us">ABOUT US</a></li>
                     <li><a href="#services">SERVICES</a></li>
-					<li><a href="#doctor">DOCTOR</a></li>
                     <li><a href="#contacts">CONTACT US</a></li>
                 </ul>
             </div>
@@ -157,7 +167,7 @@
                         data-position="leftCenter" data-horizontal="15" data-vertical="-370" 
                         data-show-transition="left" data-hide-transition="left"
                         data-show-delay="0" data-hide-delay="0">
-                        Welcome Dental Clinic
+                        Welcome To Varsha Clinic
                     </h3>
 
                     <h1 class="sp-layer slider-title" 
@@ -178,7 +188,7 @@
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
                         data-show-delay="600" data-hide-delay="600">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris.
+                        We strongly believe that a friendly service and a relaxed atmosphere<br> should always form a natural part of your visit. At Varsha Dental Clinic,<br> we aim to deliver the highest quality of care, while making you feel at <br> home. Our patients are always our first priority and we are always happy<br> to help. 
                     </p>
                     
                     
@@ -208,14 +218,15 @@
                         data-position="leftCenter" data-horizontal="15" data-vertical="-120" 
                         data-show-transition="left" data-hide-transition="left"
                         data-show-delay="400" data-hide-delay="400">
-                        HYGENIC TREATMENT FOR KIDS AND ADULTS
+                        HYGENIC TREATMENT FOR KIDS
                     </h2>
                     
                     <p class="sp-layer slider-text" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
                         data-show-delay="600" data-hide-delay="600">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris.
+                        We believe every child can and should have a healthy smile<br>
+                        because oral health is crucial for general health and well-being
                     </p>
                     
                     
@@ -253,14 +264,8 @@
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
                         data-show-delay="600" data-hide-delay="600">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>trud exercitation ullamco laboris.
-                    </p>
-                    
-                    <p class="sp-layer slider-button" 
-                        data-position="leftCenter" data-horizontal="15" data-vertical="300" 
-                        data-show-transition="left" data-hide-transition="left"
-                        data-show-delay="800" data-hide-delay="800">
-                        <a href="#" class="btn btn-primary">READ MORE</a>
+
+                        We endeavour to provide you with the highest quality dentistry, using the most<br> up-to-date skills and the latest and best technologies and materials available.
                     </p>
                     
             </div>
@@ -274,7 +279,7 @@
 <!-- =========================
      SERVICES
 ============================== -->
-<div class="services" id="services">
+<div class="services">
          
             <!-- SERVICES ITEM -->
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 service bg-primary-2">
@@ -337,20 +342,21 @@
 <!-- =========================
      ABOUT
 ============================== -->    
-<div class="about" id="about-us">
+<div id="about-us">
+<div class="about">
     <div class="container">
         <div class="row">
             
             <!-- ABOUT TEXT -->
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-text">
                 <h2 class="section-title"><span class="bold700">ABOUT</span> OUR CLINIC</h2>
-                <p>Varsha Dental Cinic is a professional and affordable private dental practice offering an extensive range of dental services at the clinic, including cosmetic, orthodontic, periodontic, endodontic, implant and cosmetic teeth whitening treatments, amongst other specialist dental services, We provide team-based, comprehensive dental care for children and adults, including patients of all ages who are anxious or have an underlying developmental or medical condition that may add complexity to the management of their oral health.</p>
+                <p><strong>Varsha Dental Clinic</strong> is a professional and affordable private dental practice offering an extensive range of dental services at the clinic, including cosmetic, orthodontic, periodontic, endodontic, implant and cosmetic teeth whitening treatments, amongst other specialist dental services, We provide team-based, comprehensive dental care for children and adults, including patients of all ages who are anxious or have an underlying developmental or medical condition that may add complexity to the management of their oral health.</p>
                 <ul class="text-list">
                     <li>General Dentistry - preventative and restorative dental care.</li>
                     <li>Specialized dental care to straighten crooked teeth in children and adults. </li>
                     <li>Treat diseases of the gums and the placement of dental implants.</li>
                 </ul>
-                <p>We are committed to helping you maintain your oral health as an integral part of your overall health and wellness. <a href="#">Read more ></a></p>
+                <p>We are committed to helping you maintain your oral health as an integral part of your overall health and wellness. </p>
             </div>
             
             <!-- ABOUT BACKGROUND -->
@@ -360,6 +366,9 @@
         </div>
     </div>
 </div>
+
+</div>
+
 <!-- =========================
      END ABOUT
 ============================== -->
@@ -368,244 +377,178 @@
 <!-- =========================
     TIPS AND FAQ
 ============================== -->
-<div class="tipsfaq">
+<div class="tipsfaq" id="services">
     <div class="container">
+        <h2 class="section-title"><span class="bold700">SERVICES</span></h2>
         <div class="row">
             
-            <!-- TIPS -->
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 tips">
-                <h2 class="section-title"><span class="bold700">TOP TIPS</span> FROM DOCTORS</h2>
-                <!-- TIPS NAVS -->
-                <div class="tips-tabs">
-                    <ul class="nav nav-tabs tabs-carousel">
-                        <li class="active"><a href="#tips1" data-toggle="tab">Teeth whitening</a></li>
-                        <li><a href="#tips2" data-toggle="tab">Oral exams</a></li>
-                        <li><a href="#tips3" data-toggle="tab">Fillings and bridges</a></li>
-                        <li><a href="#tips4" data-toggle="tab">Root canals</a></li>
-                        <li><a href="#tips5" data-toggle="tab">Oral exams</a></li>
-                        <li><a href="#tips6" data-toggle="tab">Root canals</a></li>
-                    </ul>
-                    <div class="tips-btn tips-next" id="next-tips"><i class="fa fa-angle-right"></i></div>
-                    <div class="tips-btn tips-prev" id="prev-tips"><i class="fa fa-angle-left"></i></div>
-                </div>
-                <!-- TIPS ITEMS -->
-                <div class="tips-content">
-                    <div class="tab-content">
-                        
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade active in tips-content-item" id="tips1">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author1.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Wyatt Esmond</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    General Dentist
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade tips-content-item" id="tips2">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author2.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Arnie Alban</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    Pedodontics
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade tips-content-item" id="tips3">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author3.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Dustin Callahan</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    Orthodontist
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade tips-content-item" id="tips4">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author4.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Kristin Weaver</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    Hygienist
-                                </div>
-                            </div>
-                        </div> 
-                        
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade tips-content-item" id="tips5">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author5.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Leslie Adams</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    Prosthodontics
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- TIPS ITEM -->
-                        <div class="tab-pane fade tips-content-item" id="tips6">
-                            <div class="tips-content-item-text">
-                                <p>Tooth whitening (termed tooth bleaching when utilizing bleach), is either restoration of natural tooth shade or whitening beyond natural tooth shade, depending on the definition used.</p>
-                                <p>Restoration of the underlying, natural tooth shade is possible by simply removing surface (extrinsic) stains (e.g. from tea, coffee, red wine and tobacco) and calculus (tartar). This is achieved by having the teeth cleaned by a dental professional (commonly termed "scale and polish".</p>
-                                <div class="tips-content-item-btn">
-                                    <a href=# class="btn btn-primary-1">READ MORE</a>
-                                </div>
-                            </div>
-                            <div class="tips-content-item-image">
-                                <img src="./images/blog_author6.jpg" alt="" />
-                                <div class="tips-content-item-name">
-                                    <a href="#">Helen Edwards</a>
-                                </div>
-                                <div class="tips-content-item-position">
-                                    Pediatric Dentistry
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            
+            <div class="panel-group">
             
             <!-- FAQ -->
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 faq">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 faq">
                 
-                <h2 class="section-title"><span class="bold700">SERVICES</span></h2>
                 
-                <div class="panel-group" id="accordion">
+                
                 <!-- FAQ ITEM -->
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                  <i class="fa fa-heartbeat"></i> Surgical implant placements
+                              <a class="collapsed">
+                                  <i class="fa fa-heartbeat"></i> X-Ray (I.O.P.A)
                               </a>
                             </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                      <div class="panel-body">
-                        Dental implant placement is no longer performed only by oral surgeons and periodontists; general dentists are also increasingly providing difficult surgical implant services. Dental implants may be used to replace single teeth, replace multiple teeth, or provide abutments for complete dentures or partials. This topic focuses on the placement of single-tooth dental implants.
-                      </div>
                     </div>
                   </div>
                     
                 <!-- FAQ ITEM -->
-                  <div class="panel panel-default">
+                 <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                                <i class="fa fa-medkit"></i> Teeth whitening
-                              </a>
+                              <a class="collapsed"><i class="fa fa-medkit"></i> Root Canal Treatment (R.C.T.)</a>
                             </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Dental implant placement is no longer performed only by oral surgeons and periodontists; general dentists are also increasingly providing difficult surgical implant services. Dental implants may be used to replace single teeth, replace multiple teeth, or provide abutments for complete dentures or partials. This topic focuses on the placement of single-tooth dental implants.
-                      </div>
-                    </div>
                   </div>
-                    
                 <!-- FAQ ITEM -->
-                  <div class="panel panel-default">
+
+                <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-                                <i class="fa fa-life-bouy"></i> Teeth cleaning
-                              </a>
+                              <a class="collapsed"><i class="fa fa-life-bouy"></i> Ultrasonic Scaling</a>
                             </h4>
                     </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Dental implant placement is no longer performed only by oral surgeons and periodontists; general dentists are also increasingly providing difficult surgical implant services. Dental implants may be used to replace single teeth, replace multiple teeth, or provide abutments for complete dentures or partials. This topic focuses on the placement of single-tooth dental implants.
-                      </div>
-                    </div>
-                  </div>
-                    
+                </div>
+
                     <!-- FAQ ITEM -->
+
                     <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
-                                <i class="fa fa-flask"></i> X-rays
-                              </a>
+                              <a class="collapsed"><i class="fa fa-flask"></i> Denture (R.P.D & C.D.)</a>
                             </h4>
                     </div>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Dental implant placement is no longer performed only by oral surgeons and periodontists; general dentists are also increasingly providing difficult surgical implant services. Dental implants may be used to replace single teeth, replace multiple teeth, or provide abutments for complete dentures or partials. This topic focuses on the placement of single-tooth dental implants.
-                      </div>
-                    </div>
-                  </div>
-                    
+                </div>
+
                     <!-- FAQ ITEM -->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-ambulance"></i> Crowns & Bridges (Capping)</a>
+                            </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 faq">
+                                
+                <!-- FAQ ITEM -->
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-heartbeat"></i>  Post & Core</a>
+                            </h4>
+                    </diV>
+                 </div>
+                <!-- FAQ ITEM -->
+
                     <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">
-                                <i class="fa fa-ambulance"></i> Crowns
-                              </a>
+                              <a class="collapsed"><i class="fa fa-medkit"></i>  Implant</a>
                             </h4>
+                    </diV>
+                </div>
+
+                    
+                <!-- FAQ ITEM -->
+
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-life-bouy"></i>  Smile Designing</a>
+                            </h4>
+                    </diV>
+                </div>
+
+                    <!-- FAQ ITEM -->
+
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-flask"></i>  Pyorrhea Treatment</a>
+                            </h4>
+                    </diV>
+                </div>
+                    
+                    <!-- FAQ ITEM -->
+
+
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-ambulance"></i>  Oral Rehabilitation</a>
+                            </h4>
+                    </diV>
                     </div>
-                    <div id="collapseFive" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        Dental implant placement is no longer performed only by oral surgeons and periodontists; general dentists are also increasingly providing difficult surgical implant services. Dental implants may be used to replace single teeth, replace multiple teeth, or provide abutments for complete dentures or partials. This topic focuses on the placement of single-tooth dental implants.
-                      </div>
-                    </div>
-                  </div>
+                    
+                </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 faq">
+                                
+                <!-- FAQ ITEM -->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-heartbeat"></i> Whitening Of Teeth (Bleaching)</a>
+                            </h4>
+                    </diV>
+                </div>
+
+                    
+                <!-- FAQ ITEM -->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-medkit"></i> Oral Checkup by IntraOral Camera</a>
+                            </h4>
+                    </diV>
+                </div>
+                    
+                <!-- FAQ ITEM -->
+              <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-life-bouy"></i> Aesthetic Tooth Jewellery</a>
+                            </h4>
+                    </diV>
+                </div>
+                    
+                    <!-- FAQ ITEM -->
+
+              <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-flask"></i> Toothache Control</a>
+                            </h4>
+                    </diV>
+                </div>
+
+                    
+                    <!-- FAQ ITEM -->
+
+
+              <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                              <a class="collapsed"><i class="fa fa-ambulance"></i> Tooth Sensitiveness Control</a>
+                            </h4>
+                    </diV>
+                </div>
                     
                 </div>
             </div>
-            
         </div>
     </div>
 </div>
@@ -631,7 +574,7 @@
 <!-- =========================
     FOOTER
 ============================== -->
-<div class="footer">
+<div class="footer" id="contacts">
     <div class="container">
         <div class="row">
             
@@ -782,6 +725,56 @@
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+    // Select all links with hashes
+$( document ).ready(function() {
+
+    $(".nav li").click(function() {
+        $(".nav li").removeClass('active');
+        $(this).addClass('active');    
+    });
+
+
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  })
+});
+
+</script>
+
 
 </body>
 </html>
