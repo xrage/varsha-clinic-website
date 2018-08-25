@@ -601,7 +601,7 @@ function initialize() {
 	/* ==== MAP OPTIONS ====*/
 	var mapOptions = {
 		center: new google.maps.LatLng(26.9334218,81.1779198),
-		zoom: 25,
+		zoom: 50,
 		scrollwheel: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
