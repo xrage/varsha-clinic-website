@@ -596,11 +596,12 @@ function initialize() {
 
 	/* ==== CENTER AND MARKER COORDINATES ====*/
 	var myLatlng = new google.maps.LatLng(26.933463,81.176220);
+	var myLatlng2 = new google.maps.LatLng(26.932940, 81.180221);
 
 	/* ==== MAP OPTIONS ====*/
 	var mapOptions = {
-		center: myLatlng,
-		zoom: 17,
+		center: new google.maps.LatLng(26.9334218,81.1779198),
+		zoom: 16,
 		scrollwheel: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
@@ -622,9 +623,21 @@ function initialize() {
 		icon: image
 	});
 
+	var marker2 = new google.maps.Marker({
+		position: myLatlng2,
+		map: map,
+		icon: image
+	});
+
 	if($('*').is('#map')) {
 		var marker = new google.maps.Marker({
 			position: myLatlng,
+			map: map1,
+			icon: image
+		});
+
+		var marker2 = new google.maps.Marker({
+			position: myLatlng2,
 			map: map1,
 			icon: image
 		});
