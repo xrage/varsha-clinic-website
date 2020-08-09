@@ -596,11 +596,11 @@ function initialize() {
 
 	/* ==== CENTER AND MARKER COORDINATES ====*/
 	var myLatlng = new google.maps.LatLng(26.933463,81.176220);
-	var myLatlng2 = new google.maps.LatLng(26.932940, 81.180221);
+	var myLatlng2 = new google.maps.LatLng(26.9311899, 81.1793089);
 
 	/* ==== MAP OPTIONS ====*/
 	var mapOptions = {
-		center: new google.maps.LatLng(26.9334218,81.1779198),
+		center: new google.maps.LatLng(26.9334218, 81.1779198),
 		zoom: 16,
 		scrollwheel: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
