@@ -595,11 +595,11 @@ jQuery(document).ready(function($){
 function initialize() {
 
 	/* ==== CENTER AND MARKER COORDINATES ====*/
-	var myLatlng = new google.maps.LatLng(26.9302883,81.1845542);
+	var myLatlng = new google.maps.LatLng(26.926379,81.188679);
 
 	/* ==== MAP OPTIONS ====*/
 	var mapOptions = {
-		center: new google.maps.LatLng(26.9302883,81.1845542),
+		center: new google.maps.LatLng(26.926379,81.188679),
 		zoom: 16,
 		scrollwheel: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
